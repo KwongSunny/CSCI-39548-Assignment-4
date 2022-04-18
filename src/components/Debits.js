@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 // src/components/Debits.js
 const Debits = (props) => { 
-  const {calculateDebit, refreshBalance, totalDebit, totalCredit, balance, debits} = props;
+  const {addDebit, calculateDebit, refreshBalance, totalDebit, totalCredit, balance, debits} = props;
 
   const [desc, setDesc] = useState ('');
   const [amount, setAmount] = useState (0); 
