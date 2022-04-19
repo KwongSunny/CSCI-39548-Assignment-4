@@ -30,7 +30,9 @@ const Debits = (props) => {
       <h4>Total Debit: {totalDebit} | Total Credit: {totalCredit}</h4>
       {debits && debitsView()}
       {refreshBalance && calculateDebit && <form onSubmit={addDebit}>
+        Description
         <input type="text" name="description" onChange={(e) => {setDesc(e.target.value)}}/>
+        Amount
         <input type="number" name="amount" onChange={(e) => {setAmount(parseFloat(e.target.value).toFixed(2));}}/>
         <button type="submit" onClick = {(e) => {
             e.preventDefault(); 

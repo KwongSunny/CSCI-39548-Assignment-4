@@ -29,7 +29,9 @@ const Credits = (props) => {
       <h4>Total Debit: {totalDebit} | Total Credit: {totalCredit}</h4>
       {credits && creditsView()}
       <form onSubmit={addCredit}>
+        Description:
         <input type="text" name="description" onChange={(e) => {setDesc(e.target.value)}}/>
+        Amount:
         <input type="number" name="amount" onChange={(e) => {setAmount(e.target.value); console.log(e.target.value)}}/>
         <button type="submit" onClick = {(e) => {
             e.preventDefault(); 
